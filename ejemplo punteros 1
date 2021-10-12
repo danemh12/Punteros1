@@ -1,0 +1,14 @@
+#include <stdio.h>
+void intercambia (int *, int *);
+main(void){
+int a=8, b=7;
+printf (" Antes: a = %d b=%d\n",a,b);
+intercambia(&a,&b);
+printf (" Despues: a = %d b=%d\n",a,b);
+}
+void intercambia (int *x, int *b){
+int z;
+z = *x;
+*x = *b;
+*b = z;
+}
